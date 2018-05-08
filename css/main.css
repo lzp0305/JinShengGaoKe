@@ -1,0 +1,74 @@
+.center {
+  width: 1140px;
+  margin: 0 auto;
+  position: relative; }
+
+.header {
+  width: 100%;
+  height: 95px;
+  background-color: #fff; }
+  .header .logo {
+    width: 139px;
+    height: 45px;
+    display: block;
+    float: left;
+    margin-top: 27px; }
+  .header .fir_menu {
+    float: left;
+    margin: 27px 0 0 100px; }
+    .header .fir_menu .fir_item {
+      float: left;
+      width: 127px;
+      text-align: center; }
+      .header .fir_menu .fir_item:hover .sec_menu {
+        height: 45px; }
+        .header .fir_menu .fir_item:hover .sec_menu .sec_item {
+          height: 45px; }
+          .header .fir_menu .fir_item:hover .sec_menu .sec_item .sec_link {
+            height: 45px;
+            line-height: 45px;
+            font-size: 13px;
+            opacity: 1; }
+      .header .fir_menu .fir_item .fir_link {
+        font-size: 16px;
+        line-height: 45px;
+        display: block;
+        width: 100%;
+        height: 45px;
+        color: #444;
+        transition: all 0.3s; }
+      .header .fir_menu .fir_item .sec_menu {
+        padding-top: 23px;
+        position: relative;
+        z-index: 2; }
+        .header .fir_menu .fir_item .sec_menu .sec_item {
+          width: 127px;
+          height: 0px;
+          text-align: center;
+          background-color: #fff;
+          transition: all 0.3s; }
+          .header .fir_menu .fir_item .sec_menu .sec_item .sec_link {
+            background-color: #fff;
+            display: block;
+            width: 100%;
+            height: 0;
+            line-height: 0;
+            opacity: 0;
+            color: #666;
+            font-size: 0;
+            transition: height 0.3s;
+            transition: line-height 0.3s;
+            transition: opacity 0.3s; }
+            .header .fir_menu .fir_item .sec_menu .sec_item .sec_link:hover {
+              color: #da251c;
+              transition: all 0.3s; }
+    .header .fir_menu .menu_on .fir_link {
+      color: #da251c; }
+  .header .block {
+    position: absolute;
+    z-index: 1;
+    top: 93px;
+    width: 127px;
+    height: 2px;
+    background-color: #da251c;
+    transition: all 0.3s; }
