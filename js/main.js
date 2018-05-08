@@ -11,9 +11,9 @@ $(document).ready(function() {
 		$('.block').css('left', runtimeLeft);
 		$('.menu_on').children('.fir_link').css('color', '#444');
 		$(this).children('.fir_link').css('color', '#da251c');
-		$(this).find('.sec_item').each(function(index, el) {
-			$(el).css('transition-delay', '0.'+index+'s');
-		});
+		// $(this).find('.sec_item').each(function(index, el) {
+		// 	$(el).css('transition-delay', '0.'+index+'s');
+		// });
 	}, function() {
 		block();
 		$('.fir_link').css('color', '#444');
