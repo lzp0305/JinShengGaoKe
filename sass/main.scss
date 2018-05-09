@@ -25,6 +25,10 @@ $tran: all 0.3s;
 	font-family: fzltchjt;
 	src: url(../fonts/方正兰亭粗黑简体.TTF);
 }
+@font-face {
+	font-family: impact;
+	src: url(../fonts/ImpactMTStd.otf);
+}
 
 
 //页面内容开始
@@ -854,6 +858,154 @@ $tran: all 0.3s;
 			color: #888;
 			&:hover {
 				color: $red;
+			}
+		}
+	}
+}
+
+
+
+
+.ny_banner {
+	width: 100%;
+	height: 410px;
+	position: relative;
+	.ny_slide {
+		li {
+			a {
+				display: block;
+				img {
+					display: block;
+				}
+			}
+		}
+	}
+	.center {
+		top: -410px;
+	}
+	.ny_slide_prev {
+		position: absolute;
+		left: 0;
+		top: 158px;
+		width: 33px;
+		height: 43px;
+		cursor: pointer;
+		background-color: rgba(0,0,0,0.3);
+		font-size: 25px;
+		line-height: 43px;
+		text-align: center;
+		color: #fff;
+		transition: $tran;
+		&:hover {
+			background-color: $red;
+		}
+	}
+	.ny_slide_next {
+		position: absolute;
+		right: 0;
+		top: 158px;
+		width: 33px;
+		height: 43px;
+		cursor: pointer;
+		background-color: rgba(0,0,0,0.3);
+		font-size: 25px;
+		line-height: 43px;
+		text-align: center;
+		color: #fff;
+		transition: $tran;
+		&:hover {
+			background-color: $red;
+		}
+	}
+}
+
+
+.ny_submenu {
+	width: 100%;
+	height: 52px;
+	bottom: 0;
+	position: absolute;
+	background-color: rgba(218,37,28,0.86);
+	.center2 {
+		margin: 0 auto;
+		width: 1202px;
+		.group {
+			height: 52px;
+			li {
+				float: left;
+				a {
+					padding: 0 42px;
+					color: #fff;
+					line-height: 52px;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+
+
+.about_box {
+	width: 100%;
+	margin-top: 80px;
+	overflow: hidden;
+	.center {
+		background-image: url(../images/ny_about_bg.jpg);
+		background-size: 264px 446px;
+		background-position: top 0 right 0;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		.left {
+			width: 541px;
+			.title {
+				width: 541px;
+				float: left;
+				font-size: 40px;
+				line-height: 40px;
+				color: #333;
+				margin-top: 30px;
+			}
+			.redline {
+				width: 20px;
+				height: 2px;
+				margin-right: 521px;
+				float: left;
+				margin-top: 22px;
+				background-color: $red;
+			}
+			.text {
+				width: 541px;
+				float: left;
+				font-size: 14px;
+				line-height: 27px;
+				color: #777;
+				margin-top: 32px;
+			}
+			.num {
+				margin-bottom: 120px;
+				width: 100%;
+				float: left;
+				li {
+					display: block;
+					float: left;
+					margin-right: 75px;
+					.number {
+						display: block;
+						font-family: impact;
+						font-size: 40px;
+						height: 62px;
+						line-height: 62px;
+						color: #262c30;
+					}
+					.number_title {
+						display: block;
+						font-size: 14px;
+						color: #777;
+						line-height: 14px;
+						margin-top: 15px;
+					}
+				}
 			}
 		}
 	}
