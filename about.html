@@ -136,7 +136,55 @@
 					</li>
 				</ul>
 			</div>
+			<div class="right">
+				<ul class="about_slide">
+					<li><a href=""><img src="images/about_img1.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/about_img1.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/about_img1.jpg" alt=""></a></li>
+					<li><a href=""><img src="images/about_img1.jpg" alt=""></a></li>
+				</ul>
+				<div class="ny_about_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+				<div class="ny_about_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+			</div>
+			<script>
+				$('.about_box').find('.right').slide({
+					mainCell: '.about_slide',
+					autoPlay: true,
+					effect: 'leftLoop',
+					prevCell: '.ny_about_prev',
+					nextCell: '.ny_about_next'
+				})
+			</script>
 		</div>
+	</div>
+
+
+
+
+	<div class="honor">
+		<div class="center">
+			<div class="title">荣誉资质</div>
+			<div class="redline"></div>
+			<ul class="honor_slide">
+				<li><a href=""><img src="images/honor1.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/honor2.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/honor3.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/honor4.jpg" alt=""></a></li>
+				<li><a href=""><img src="images/honor1.jpg" alt=""></a></li>
+			</ul>
+			<div class="ny_honor_prev"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></div>
+			<div class="ny_honor_next"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></div>
+		</div>
+		<script>
+			$('.honor').slide({
+				mainCell: '.honor_slide',
+				autoPlay: true,
+				effect: 'leftLoop',
+				vis: 4,
+				prevCell: '.ny_honor_prev',
+				nextCell: '.ny_honor_next'
+			})
+		</script>
 	</div>
 
 
