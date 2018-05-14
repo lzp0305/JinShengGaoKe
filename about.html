@@ -92,9 +92,9 @@
 		<div class="ny_submenu">
 			<div class="center2">
 				<ul class="group">
-					<li><a href="">公司简介</a></li>
-					<li><a href="">荣誉资质</a></li>
-					<li><a href="">技术成果</a></li>
+					<li><a href="javascript:void(0);" tohref="#aboutAnchor">公司简介</a></li>
+					<li><a href="javascript:void(0);" tohref="#honorAnchor">荣誉资质</a></li>
+					<li><a href="javascript:void(0);" tohref="#techAnchor">技术成果</a></li>
 				</ul>
 			</div>
 		</div>
@@ -106,11 +106,35 @@
 			nextCell: '.ny_slide_next',
 			autoPlay: true,
 			effect: 'leftLoop'
-		})
+		});
+		$(window).scroll(function() {
+			var subMenu2Top = $('.ny_submenu').offset().top;
+			var scrollDistance = $(window).scrollTop();
+			if (scrollDistance>=453) {
+				$('.ny_submenu').css({
+					'position': 'fixed',
+					'top':'0',
+					'bottom':'auto',
+					'background-color':'rgba(218,37,28,1)'
+				});
+			} else {
+				$('.ny_submenu').css({
+					'position': 'absolute',
+					'top':'auto',
+					'bottom':'0',
+					'background-color':'rgba(218,37,28,0.86)'
+				});
+			}
+		});
+		$('.ny_submenu').find('a').click(function() {
+			var link = $(this).attr('tohref');
+			var need2top = $(link).offset().top;
+			$("html,body").stop().animate({scrollTop:need2top},300);
+			// console.log($(this).attr('tohref'));
+		});
 	</script>
 
-
-
+	<div id="aboutAnchor" style="position: relative; top: -52px;"></div>
 	<div class="about_box">
 		<div class="center">
 			<div class="left">
@@ -161,6 +185,7 @@
 
 
 
+	<div id="honorAnchor" style="position: relative; top: -52px;"></div>
 	<div class="honor">
 		<div class="center">
 			<div class="title">荣誉资质</div>
@@ -189,6 +214,7 @@
 
 
 
+	<div id="techAnchor" style="position: relative; top: -52px;"></div>
 	<div class="tech_achievement">
 		<div class="center">
 			<div class="title">技术成果</div>
@@ -223,7 +249,7 @@
 							<div class="tech_summary">这里放技术成果的简介，超出会自动隐藏掉。这里放技术成果的简介，超出会自动隐藏掉。这里放技术成果的简介，超出会自动隐藏掉。这里放技术成果的简介，超出会自动隐藏掉。这里放技术成果的简介，超出会自动隐藏掉。这里放技术成果的简介，超出会自动隐藏掉。这里放技术成果的简介，超出会自动隐藏掉。这里放技术成果的简介，超出会自动隐藏掉。</div>
 						</div></a></li>
 			</ul>
-			<a href="javascript:void(0);" class="click_more">点击加载更多</a>
+			<a href="" class="click_more">点击加载更多</a>
 		</div>
 	</div>
 	<script>

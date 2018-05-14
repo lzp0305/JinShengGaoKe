@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="云端科技 www.yunduancn.com">
+	<title>金盛高科</title>
+	<link rel="stylesheet" href="css/minireset.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+	<script src="js/jquery.xdlines.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="center">
+			<a href="" class="logo"><img src="images/logo.png" alt=""></a>
+			<ul class="fir_menu">
+				<li class="fir_item menu_on">
+					<a href="" class="fir_link">首页</a>
+				</li>
+				<li class="fir_item">
+					<a href="" class="fir_link">关于金盛</a>
+					<ul class="sec_menu">
+						<li class="sec_item">
+							<a href="" class="sec_link">公司简介</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">荣誉资质</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">技术成果</a>
+						</li>
+					</ul>
+				</li>
+				<li class="fir_item">
+					<a href="" class="fir_link">产品中心</a>
+					<ul class="sec_menu">
+						<li class="sec_item">
+							<a href="" class="sec_link">减水剂</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">防水剂</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">968ZX增效剂</a>
+						</li>
+					</ul>
+				</li>
+				<li class="fir_item">
+					<a href="" class="fir_link">新闻资讯</a>
+					<ul class="sec_menu">
+						<li class="sec_item">
+							<a href="" class="sec_link">公司新闻</a>
+						</li>
+						<li class="sec_item">
+							<a href="" class="sec_link">行业新闻</a>
+						</li>
+					</ul>
+				</li>
+				<li class="fir_item">
+					<a href="" class="fir_link">客户留言</a>
+				</li>
+				<li class="fir_item">
+					<a href="" class="fir_link">联系我们</a>
+				</li>
+			</ul>
+			<div class="block"></div>
+			<div class="hotline">
+				<div class="title">全国热线</div>
+				<div class="number">0791-83775511</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+
+
+
+	<div class="ny_banner">
+		<ul class="ny_slide">
+			<li><a href=""><img src="images/ny_banner1.jpg" alt=""></a></li>
+			<li><a href=""><img src="images/ny_banner2.jpg" alt=""></a></li>
+		</ul>
+		<div class="center">
+			<div class="ny_slide_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+			<div class="ny_slide_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+		</div>
+		<div class="ny_submenu">
+			<div class="center2">
+				<ul class="group">
+					<li><a href="javascript:void(0);" tohref="#aboutAnchor">公司新闻</a></li>
+					<li><a href="javascript:void(0);" tohref="#honorAnchor">行业新闻</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		$('.ny_banner').slide({
+			mainCell: '.ny_slide',
+			prevCell: '.ny_slide_prev',
+			nextCell: '.ny_slide_next',
+			autoPlay: true,
+			effect: 'leftLoop'
+		});
+		$(window).scroll(function() {
+			var subMenu2Top = $('.ny_submenu').offset().top;
+			var scrollDistance = $(window).scrollTop();
+			if (scrollDistance>=453) {
+				$('.ny_submenu').css({
+					'position': 'fixed',
+					'top':'0',
+					'bottom':'auto',
+					'background-color':'rgba(218,37,28,1)'
+				});
+			} else {
+				$('.ny_submenu').css({
+					'position': 'absolute',
+					'top':'auto',
+					'bottom':'0',
+					'background-color':'rgba(218,37,28,0.86)'
+				});
+			}
+		});
+		$('.ny_submenu').find('a').click(function() {
+			var link = $(this).attr('tohref');
+			var need2top = $(link).offset().top;
+			$("html,body").stop().animate({scrollTop:need2top},300);
+			// console.log($(this).attr('tohref'));
+		});
+	</script>
+
+
+
+
+
+
+	<div class="center" style="overflow: hidden;">
+		<div class="ps_left">
+			<div class="title">谈崩了！特朗普拒给日本关税豁免 称“以后 再说”</div>
+			<div class="date">时间：2018-04-18</div>
+			<p class="relate_product_title">其他新闻</p>
+			<ul class="relate_news_group">
+				<li>
+					<a href="" class="r_title">发改委：过去两年减轻企业负担竟然超过5000亿的发改委：过去两年减轻企业负担竟然超过5000亿的</a>
+					<div class="summary">​中国网财经4月19日讯 国家发展改革委定于今日（4月19日）上午10:00召开专题新闻发布会，中国网财经4月19日讯国家发展改革委定于今日（4月19日）上午10:00召开专题新闻发布会，中国网财经4月19日讯国家发展改革委定于今日（4月19日）上午10:00召开专题新闻发布会。</div>
+				</li>
+				<li>
+					<a href="" class="r_title">发改委：过去两年减轻企业负担竟然超过5000亿的发改委：过去两年减轻企业负担竟然超过5000亿的</a>
+					<div class="summary">​中国网财经4月19日讯 国家发展改革委定于今日（4月19日）上午10:00召开专题新闻发布会，中国网财经4月19日讯国家发展改革委定于今日（4月19日）上午10:00召开专题新闻发布会，中国网财经4月19日讯国家发展改革委定于今日（4月19日）上午10:00召开专题新闻发布会。</div>
+				</li>
+				<li>
+					<a href="" class="r_title">发改委：过去两年减轻企业负担竟然超过5000亿的发改委：过去两年减轻企业负担竟然超过5000亿的</a>
+					<div class="summary">​中国网财经4月19日讯 国家发展改革委定于今日（4月19日）上午10:00召开专题新闻发布会，中国网财经4月19日讯国家发展改革委定于今日（4月19日）上午10:00召开专题新闻发布会，中国网财经4月19日讯国家发展改革委定于今日（4月19日）上午10:00召开专题新闻发布会。</div>
+				</li>
+				<li>
+					<a href="" class="r_title">发改委：过去两年减轻企业负担竟然超过5000亿的发改委：过去两年减轻企业负担竟然超过5000亿的</a>
+					<div class="summary">​中国网财经4月19日讯 国家发展改革委定于今日（4月19日）上午10:00召开专题新闻发布会，中国网财经4月19日讯国家发展改革委定于今日（4月19日）上午10:00召开专题新闻发布会，中国网财经4月19日讯国家发展改革委定于今日（4月19日）上午10:00召开专题新闻发布会。</div>
+				</li>
+			</ul>
+			<script>
+				$('.ps_left').find('.title').xdlines({
+					max: 2
+				});
+				$('.r_title').xdlines({
+					max: 1
+				});
+				$('.summary').xdlines({
+					max: 2
+				})
+			</script>
+		</div>
+		<div class="ps_right">
+			3月初，美国总统特朗普提出的对进口钢铁及铝产品征收关税的做法一度令日本相当不满，因为身为美国的盟友，日本却并不在关税豁免的名单内。在日本首相安倍晋三访美期间，双方就这一议题依然“谈崩了”。对此，美国媒体也称这无疑会令日本感到失望。<br><br>
+
+综合美联社及《日本时报》报道，当地时间18日，特朗普和安倍在海湖庄园举行的一场联合新闻发布会上表示，美日双方未能就日本获得钢铁及铝产品关税豁免达成协议。不过在经过2天的会谈后，双方却宣布同意开始就一项“自由、公平和互惠”的贸易协定进行谈判。<br><br>
+
+在被问及关税问题时，特朗普回应称：“如果我们能够达成新的协议，那么（关税豁免）肯定将是我们即将会讨论的事情，我也会在未来的某个时刻考虑将日本从关税名单中去掉。”但他也表示，当前两国间的贸易赤字太高，因此不值得对日本进行关税豁免。美国商务部的数据显示，2017年美日两国间的贸易逆差达561亿美元。<br><br>
+
+对此，美联社分析称，考虑到大多数的美国盟国——澳大利亚、加拿大、欧盟国家和墨西哥都已获得关税豁免，因此此次未能达成协议无疑会令日本感到失望。<br><br>
+
+据海外网早前报道，日本方面早前就已表达出对美国区别对待的不满。“美国政府至今也没有说明为什么要这么‘区别对待’”，日本经济新闻表示，尽管美国对钢铁和铝制品征收关税从表面上来看是出于“维护国家安全”，但很显然，真正目的是为了扶持国内的金属产业。<br><br>
+			<img src="images/p1.jpg" alt="">
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="footer_info">
+		<div class="center">
+			<div class="footer_info_left">
+				<div class="tel">0791-83775511</div>
+				<div class="work_time">周一到周六&nbsp;8:30-18:00<br>（工作时间）</div>
+				<a href="http://wpa.qq.com/msgrd?v=3&uin=1111111111&site=qq&menu=yes" class="qq"><i class="fa fa-qq" aria-hidden="true"></i>在线咨询</a>
+			</div>
+			<ul class="footer_info_menu">
+				<li>
+					<div class="footer_info_menu_item1">关于金盛</div>
+					<div class="footer_info_menu_item2"><a href="">公司简介</a></div>
+					<div class="footer_info_menu_item2"><a href="">荣誉资质</a></div>
+					<div class="footer_info_menu_item2"><a href="">技术成果</a></div>
+				</li>
+				<li>
+					<div class="footer_info_menu_item1">产品中心</div>
+					<div class="footer_info_menu_item2"><a href="">减水剂</a></div>
+					<div class="footer_info_menu_item2"><a href="">防水剂</a></div>
+					<div class="footer_info_menu_item2"><a href="">968ZX增效剂</a></div>
+				</li>
+				<li>
+					<div class="footer_info_menu_item1">新闻咨询</div>
+					<div class="footer_info_menu_item2"><a href="">公司新闻</a></div>
+					<div class="footer_info_menu_item2"><a href="">行业新闻</a></div>
+				</li>
+				<li>
+					<div class="footer_info_menu_item1">其他内容</div>
+					<div class="footer_info_menu_item2"><a href="">联系我们</a></div>
+					<div class="footer_info_menu_item2"><a href="">客户留言</a></div>
+				</li>
+			</ul>
+			<div class="footer_info_qr">
+				<img src="images/qr.jpg" alt="">
+				<div class="title">扫一扫，关注公众号</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_bar">
+		<div class="center">
+			<div class="copyright">Copyright © 2018 江西省金盛高科技发展有限责任公司  皖ICP备05012247号 </div>
+			<div class="tech_support">技术支持：<a href="http://www.yunduancn.com">云端科技</a></div>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="js/main.js"></script>
+</body>
